@@ -55,7 +55,7 @@ namespace BYNOGAME.API.Persistence.Contexts
                     Name = "Huntsman Knife | Tiger Tooth (Factory New)",
                     Fiyat = 1368,
                     Kaliteturu = EKaliteturu.factory_new,
-                    CategoryId = 101,
+                    CategoryId = 100,
                 },
                 new Product
                 {
@@ -97,6 +97,136 @@ namespace BYNOGAME.API.Persistence.Contexts
                     Fiyat = 1172,
                     Kaliteturu = EKaliteturu.field_tested,
                     CategoryId = 100,
+                },
+                new Product
+                {
+                    Id = 8,
+                    Name = "Flip Knife | Freehand (Well-Worn)",
+                    Fiyat = 900,
+                    Kaliteturu = EKaliteturu.well_worn,
+                    CategoryId = 100,
+                },
+                new Product
+                {
+                    Id = 9,
+                    Name = "Flip Knife | Ultraviolet (Field-Tested)",
+                    Fiyat = 798,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 100,
+                },
+                new Product
+                {
+                    Id = 10,
+                    Name = "Talon Knife | Tiger Tooth (Factory New)",
+                    Fiyat = 3493,
+                    Kaliteturu = EKaliteturu.factory_new,
+                    CategoryId = 100,
+                },
+                new Product
+                {
+                    Id = 11,
+                    Name = "Shadow Daggers | Crimson Web (Field-Tested)",
+                    Fiyat = 746,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 100,
+                },
+                new Product
+                {
+                    Id = 12,
+                    Name = "AK-47 | Asiimov (Field-Tested)",
+                    Fiyat = 205,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 102,
+                },
+
+                new Product
+                {
+                    Id = 13,
+                    Name = "AK-47 | Redline (Field-Tested)",
+                    Fiyat = 91,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 14,
+                    Name = "AWP | Mortis (Field-Tested)",
+                    Fiyat = 26,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 15,
+                    Name = "AWP | Asiimov (Field-Tested)",
+                    Fiyat = 405,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 16,
+                    Name = "AK-47 | Frontside Misty (Field-Tested)",
+                    Fiyat = 107,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 102,
+                },
+
+                new Product
+                {
+                    Id = 17,
+                    Name = "M4A4 | Buzz Kill (Field-Tested)",
+                    Fiyat = 83,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 18,
+                    Name = "AK-47 | Frontside Misty (Minimal Wear)",
+                    Fiyat = 152,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 19,
+                    Name = "AK-47 | The Empress (Well-Worn)",
+                    Fiyat = 216,
+                    Kaliteturu = EKaliteturu.well_worn,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 20,
+                    Name = "AK-47 | Bloodsport (Factory New)",
+                    Fiyat = 378,
+                    Kaliteturu = EKaliteturu.factory_new,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 21,
+                    Name = "Galil AR | Rocket Pop (Minimal Wear)",
+                    Fiyat = 10,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 22,
+                    Name = "M4A4 | Desolate Space (Battle-Scarred)",
+                    Fiyat = 65,
+                    Kaliteturu = EKaliteturu.battle_scarred,
+                    CategoryId = 102,
+                },
+                new Product
+                {
+                    Id = 23,
+                    Name = "M4A4 | Hellfire (Minimal Wear)",
+                    Fiyat = 151,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 102,
                 }
             );
         }
