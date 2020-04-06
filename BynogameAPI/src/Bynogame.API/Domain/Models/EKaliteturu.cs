@@ -5,15 +5,19 @@ namespace BYNOGAME.API.Domain.Models
     public enum EKaliteturu : byte
     {
         [Description("FN")]
-        Factory_new = 1,
+        factory_new = 1,
+
+        [Description("MW")]
+        minimal_wear = 2,
 
         [Description("WW")]
-        Well_worn = 2,
+        well_worn = 3,
 
-        [Description("MR")]
-        Mid_Range = 3,
+        [Description("FT")]
+        field_tested = 4,
 
         [Description("BS")]
-        Battle_scarred = 4
+        battle_scarred = 5,
+
     }
 }

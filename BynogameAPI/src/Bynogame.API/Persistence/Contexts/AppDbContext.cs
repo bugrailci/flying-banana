@@ -23,12 +23,12 @@ namespace BYNOGAME.API.Persistence.Contexts
 
             builder.Entity<Category>().HasData
             (
-                new Category { Id = 100, Name = "Býçak" },
-                new Category { Id = 101, Name = "AWP" },
-                new Category { Id = 102, Name = "AK-47" },
-                new Category { Id = 103, Name = "SMG" },
-                new Category { Id = 104, Name = "Desert-Eagle" },
-                new Category { Id = 105, Name = "Eldiven" }
+                new Category { Id = 100, Name = "Knives" },
+                new Category { Id = 101, Name = "Heavy" },
+                new Category { Id = 102, Name = "Rifles" },
+                new Category { Id = 103, Name = "SMGs" },
+                new Category { Id = 104, Name = "Pistols" },
+                new Category { Id = 105, Name = "Gloves" }
             );
 
             builder.Entity<Product>().ToTable("Guns & Stuff");
@@ -43,67 +43,60 @@ namespace BYNOGAME.API.Persistence.Contexts
                 new Product
                 {
                     Id = 1,
-                    Name = "Worm God(BS)",
-                    Fiyat = 5,
-                    Kaliteturu = EKaliteturu.Battle_scarred,
-                    CategoryId = 101
+                    Name = "M9 Bayonet | Doppler (Factory New)",
+                    Fiyat = 2783,
+                    Kaliteturu = EKaliteturu.factory_new,
+                    CategoryId = 100,
                 },
 
                 new Product
                 {
-                    Id = 131,
-                    Name = "Dragonlore(FN)",
-                    Fiyat = 5500,
-                    Kaliteturu = EKaliteturu.Factory_new,
+                    Id = 2,
+                    Name = "Huntsman Knife | Tiger Tooth (Factory New)",
+                    Fiyat = 1368,
+                    Kaliteturu = EKaliteturu.factory_new,
                     CategoryId = 101,
                 },
                 new Product
                 {
                     Id = 3,
-                    Name = "Worm God(MR)",
-                    Fiyat = 40,
-                    Kaliteturu = EKaliteturu.Mid_Range,
+                    Name = "Stiletto Knife | Fade (Factory New)",
+                    Fiyat = 2081,
+                    Kaliteturu = EKaliteturu.factory_new,
                     CategoryId = 100
                 },
                 new Product
                 {
-                    Id = 5,
-                    Name = "Örümcek Karambit(FN)",
-                    Fiyat = 1500,
-                    Kaliteturu = EKaliteturu.Factory_new,
+                    Id = 4,
+                    Name = "Huntsman Knife | Slaughter (Minimal Wear)",
+                    Fiyat = 1397,
+                    Kaliteturu = EKaliteturu.minimal_wear,
                     CategoryId = 100,
                 },
                 new Product
                 {
-                    Id = 10,
-                    Name = "AK-47 Asimov(BS)",
-                    Fiyat = 80,
-                    Kaliteturu = EKaliteturu.Battle_scarred,
-                    CategoryId = 102
+                    Id = 5,
+                    Name = "Shadow Daggers | Ultraviolet (Field-Tested)",
+                    Fiyat = 524,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 100
                 },
 
                 new Product
                 {
-                    Id = 101,
-                    Name = "Red-Poison Desert Eagle(FN)",
-                    Fiyat = 300,
-                    Kaliteturu = EKaliteturu.Factory_new,
-                    CategoryId = 101,
+                    Id = 6,
+                    Name = "M9 Bayonet | Marble Fade (Factory New)",
+                    Fiyat = 4655,
+                    Kaliteturu = EKaliteturu.factory_new,
+                    CategoryId = 100,
                 },
                 new Product
                 {
-                    Id = 12,
-                    Name = "Terrorist-Green",
-                    Fiyat = 500,
-                    CategoryId = 105
-                },
-                new Product
-                {
-                    Id = 14,
-                    Name = "Midnight Bayoneet(FN)",
-                    Fiyat = 1000,
-                    Kaliteturu = EKaliteturu.Factory_new,
-                    CategoryId = 105,
+                    Id = 7,
+                    Name = "Flip Knife | Autotronic (Field-Tested)",
+                    Fiyat = 1172,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 100,
                 }
             );
         }
