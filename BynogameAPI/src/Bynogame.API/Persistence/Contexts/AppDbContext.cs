@@ -314,7 +314,71 @@ namespace BYNOGAME.API.Persistence.Contexts
                     Kaliteturu = EKaliteturu.minimal_wear,
                     CategoryId = 104,
                     URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8j_OrfdqWhe5sN4mOTE8bP5gVO8v109YDj0do7Dcw9taA6C81K_k-_n1pfp6MnOnSZhu3Qm4SrfzBbkg01McKUx0iC2I2fd/300fx300f",
+                },
+                new Product
+                {
+                    Id = 31,
+                    Name = "MP5-SD | Phosphor (Field-Tested)",
+                    Fiyat = 23,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 103,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6rwOANf1OD3fC0X09qzh5SCgfb4DL_Dn3tu5cB1g_zMu9n33waw-hZqMmvxLNLAJwBqYViDrFO8yObugZ_vtZmcyHcw7HYm5CrD30vg0FG2818/300fx300f",
+                },
+                new Product
+                {
+                    Id = 32,
+                    Name = "P90 | Asiimov (Field-Tested)",
+                    Fiyat = 53,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 103,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopuP1FAR17OORIXBD_9W_mY-dqPrxN7LEmyUF7MEniOqXpY2hiwbs80s-Zjv1Jo-QcQM8NF_Z81Ltxr3qgJ_tuc6b1zI97XT1Ujq3/300fx300f",
+                },
+                new Product
+                {
+                    Id = 33,
+                    Name = "MAC-10 | Stalker (Well-Worn)",
+                    Fiyat = 59,
+                    Kaliteturu = EKaliteturu.well_worn,
+                    CategoryId = 103,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf1OD3fDxBvYyJh5SKm_zxIYTck29Y_cg_3e_FrNWkigTgrkM_Zmn7IIGXc1M7Yl_X_lPvx-zrhpC_tM7OwCNl6T5iuyiXe4lf6Q/300fx300f",
+                },
+                new Product
+                {
+                    Id = 34,
+                    Name = "MAC-10 | Neon Rider (Factory New)",
+                    Fiyat = 79,
+                    Kaliteturu = EKaliteturu.factory_new,
+                    CategoryId = 103,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJmoWEmeX9N77DqWdY781lxL3D9NSni1LmqRJuN2ClcNWTewJqZljXqFS4wurthMTu787LySBivSQ8pSGKiltL9Jg/300fx300f",
+                },
+                new Product
+                {
+                    Id = 35,
+                    Name = "MP7 | Bloodsport (Minimal Wear)",
+                    Fiyat = 35,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 103,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFABz7P7YJgJA4NO5kJObmOXgDLfYkWNFpsRz3-qSpdis2AW3rhFvYWn3LISSdgRsYVzR8lC7lOm9gMO_786bwHd9-n51Z2R5ZH4/300fx300f",
+                },
+                new Product
+                {
+                    Id = 36,
+                    Name = "UMP-45 | Primal Saber (Field-Tested)",
+                    Fiyat = 15,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 103,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1Jf0Ob3ZDBSuImJhJKCmvb4ILrTk3lu5cB1g_zMu46jjAGy80c_ajqgd9OTdFRoZl_V_VG5xr_r1pO9vMvNyidhs3Rztn7D30vgvDNIovc/300fx300f",
+                },
+                new Product
+                {
+                    Id = 37,
+                    Name = "MP7 | Powercore (Well-Worn)",
+                    Fiyat = 3,
+                    Kaliteturu = EKaliteturu.well_worn,
+                    CategoryId = 103,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFABz7OPHZjhQ79Okkb-Gh6DLPr7Vn35cppwm37-S8Nn20VXmr0o-ajvwIYScIFRrZV-F_lK_xem-g5C4u5rOnXB9-n5169l_4VQ/300fx300f",
                 }
+
             );
         }
     }
