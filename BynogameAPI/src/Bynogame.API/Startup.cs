@@ -12,6 +12,7 @@ using BYNOGAME.API.Extensions;
 using BYNOGAME.API.Persistence.Contexts;
 using BYNOGAME.API.Persistence.Repositories;
 using BYNOGAME.API.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace BYNOGAME.API
 {
@@ -57,6 +58,10 @@ namespace BYNOGAME.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
 
             app.UseCustomSwagger();
 
@@ -64,9 +69,16 @@ namespace BYNOGAME.API
 
             app.UseAuthorization();
 
+            app.UseStaticFiles();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Could Not Find Anything");
             });
         }
     }
