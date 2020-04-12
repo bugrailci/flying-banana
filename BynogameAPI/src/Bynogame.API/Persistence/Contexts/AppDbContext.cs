@@ -440,6 +440,78 @@ namespace BYNOGAME.API.Persistence.Contexts
                     Kaliteturu = EKaliteturu.minimal_wear,
                     CategoryId = 101,
                     URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpouLWzKjhh3szedDNH-NPkq4yCkP_gfe6AlG1Q7JB1iLrHodXz2gy3-0tsYT_3Io-TJAA8aVqF_la2wLjr0cSi_MOeX-HnU2o/300fx300f",
+                },
+                new Product
+                {
+                    Id = 45,
+                    Name = "Specialist Gloves | Fade (Field-Tested)",
+                    Fiyat = 3223,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 105,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDL3Qkm5u5cB1g_zMu9ukiVXi_xdqMG3xLdOWdlU-aFyC8wS4kuq-gsDv6pnOnCdquykht33D30vgxX_J52c/300fx300f",
+                },
+                new Product
+                {
+                    Id = 46,
+                    Name = "Hand Wraps | Spruce DDPAT (Field-Tested)",
+                    Fiyat = 894,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 105,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DfVlxgLQFFibKkJQN3wfLYYgJK7dKyg5KKh8j3MrbeqWxD7dxOh-zF_Jn4xlCyrktsZmvxINLBdw9vNA7T_Fbrx73vjJPptJucnHdqvCJwsSyImBypwUYblwFxuLY/300fx300f",
+                },
+                new Product
+                {
+                    Id = 47,
+                    Name = "Hand Wraps | Badlands (Field-Tested)",
+                    Fiyat = 1231,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 105,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DfVlxgLQFFibKkJQN3wfLYYgJK7dKyg5KKh8jyMrnDn2hu59dwhO7Eyo_0hVuLphY4OiyuOtSQdwE8NA3Z-APsl-btgJXu6ZzJySEwviV2sXnfzBzlgxsfOrNu0aOACQLJ9G1Xii4/300fx300f",
+                },
+                new Product
+                {
+                    Id = 48,
+                    Name = "Sport Gloves | Omega (Field-Tested)",
+                    Fiyat = 3444,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 105,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1JmMR1osbaqPQJz7ODYfi9W9eO0mIGInMjjNrnTn2VW19x0huXO4rP4jVC9vh5yYG70LY6SJgFoMwvTrlm7lbrpgMO87p3NwXtlu3Vw7S6PnBWx005Pbfsv26LSJd_wOQ/300fx300f",
+                },
+                new Product
+                {
+                    Id = 49,
+                    Name = "Driver Gloves | Imperial Plaid (Field-Tested)",
+                    Fiyat = 2604,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 105,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAX1R3LjtQurWzLhRfwP_BcjZ9_NC3nYS0h-LmI7fUqWZU7Mxkh6eU99uh0VWxrURvMmGnIYHDelBqZwvV-FfvkOy9gce_vZ6fzyZk7yUi-z-DyDt6vfob/300fx300f",
+                },
+                new Product
+                {
+                    Id = 50,
+                    Name = "Moto Gloves | Turtle (Battle-Scarred)",
+                    Fiyat = 1210,
+                    Kaliteturu = EKaliteturu.battle_scarred,
+                    CategoryId = 105,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DeXEl7NwdOtbagFABs3OXNYgJP48i5hoOSlPvxDLnQhWJS18Jjj-zPyoPniVqzriw0Nji1bZjAew45YwvTqFjqku7ujZfotJmamCBlsnIg4XjenxG-0xpFO-Vph_KbVxzAUETHTx_K/300fx300f",
+                },
+                new Product
+                {
+                    Id = 51,
+                    Name = "Specialist Gloves | Crimson Kimono (Battle-Scarred)",
+                    Fiyat = 2984,
+                    Kaliteturu = EKaliteturu.battle_scarred,
+                    CategoryId = 105,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDLDYm2Rf5_p1g-jM-oLxm2umrhcDOzyiYs-LIFVoaV7Q_1e5wejo0cK46M7Byndg6CAisHaOzRex0hEfZuFrhKDMS0LeWfIpXjmPVQ/300fx300f",
+                },
+                new Product
+                {
+                    Id = 52,
+                    Name = "Specialist Gloves | Fade (Minimal Wear)",
+                    Fiyat = 8225,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 105,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDL3Qkm5u5Mx2gv2PrN-l0AS3-ENsZzimJ4DEIwM8YQzY_Qfqwb2615a4uJvKy3trviUhtmGdwUI6U-OVuA/300fx300f",
                 }
             );
         }
