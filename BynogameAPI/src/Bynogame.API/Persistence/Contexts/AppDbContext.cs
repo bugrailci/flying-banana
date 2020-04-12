@@ -28,7 +28,8 @@ namespace BYNOGAME.API.Persistence.Contexts
                 new Category { Id = 102, Name = "Rifles" },
                 new Category { Id = 103, Name = "SMGs" },
                 new Category { Id = 104, Name = "Pistols" },
-                new Category { Id = 105, Name = "Gloves" }
+                new Category { Id = 105, Name = "Gloves" },
+                new Category { Id=  106,   Name = "Keys"}
             );
 
             builder.Entity<Product>().ToTable("Guns & Stuff");
@@ -512,6 +513,46 @@ namespace BYNOGAME.API.Persistence.Contexts
                     Kaliteturu = EKaliteturu.minimal_wear,
                     CategoryId = 105,
                     URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDL3Qkm5u5Mx2gv2PrN-l0AS3-ENsZzimJ4DEIwM8YQzY_Qfqwb2615a4uJvKy3trviUhtmGdwUI6U-OVuA/300fx300f",
+                },
+                new Product
+                {
+                    Id = 53,
+                    Name = "Operation Hydra Case Key",
+                    Fiyat = 14,
+                    CategoryId = 106,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXX7gNTPcUxuxpJSXPbQv2S1MDeXkh6LBBOievyZVY31qHOd2sau9-zldmPwqbwZ-3Tw29U6cMnj-iQ8N_03Q3srktuNW_tZNjC3gAypq8/300fx300f",
+                },
+                new Product
+                {
+                    Id = 54,
+                    Name = "Clutch Case Key",
+                    Fiyat = 38,
+                    CategoryId = 106,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXX7gNTPcUxuxpJSXPbQv2S1MDeXkh6LBBOiev8ZQQ30KubIWVDudrgkNncw6-hY-2Fkz1S7JRz2erHodnzig2xqUVvYDrtZNjCAC7WDrU/300fx300f",
+                },
+                new Product
+                {
+                    Id = 55,
+                    Name = "Chroma 2 Case Key",
+                    Fiyat = 32,
+                    CategoryId = 106,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXX7gNTPcUxuxpJSXPbQv2S1MDeXkh6LBBOie3rKFRh16PKd2pDvozixtSOwaP2ar7SlzIA6sEo2rHCpdyhjAGxr0A6MHezetG0RZXdTA/300fx300f",
+                },
+                new Product
+                {
+                    Id = 56,
+                    Name = "Horizon Case Key",
+                    Fiyat = 32,
+                    CategoryId = 106,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXX7gNTPcUxuxpJSXPbQv2S1MDeXkh6LBBOiej1ZVdhhfebJ28T7trjkIGKxfLwZezUwDIAupUp2b-X9o2tiw3irktlZ23tZNjCvCE2Ut4/300fx300f",
+                },
+                new Product
+                {
+                    Id = 57,
+                    Name = "Shadow Case Key",
+                    Fiyat = 34,
+                    CategoryId = 106,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXX7gNTPcUxuxpJSXPbQv2S1MDeXkh6LBBOiePrKF4wi6aaIGwStN_jl4bSzvXwMO6AwDlSvsYoiOiZ8dij3QbtqkU9ZnezetFWWxusZg/300fx300f",
                 }
             );
         }
