@@ -377,8 +377,70 @@ namespace BYNOGAME.API.Persistence.Contexts
                     Kaliteturu = EKaliteturu.well_worn,
                     CategoryId = 103,
                     URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFABz7OPHZjhQ79Okkb-Gh6DLPr7Vn35cppwm37-S8Nn20VXmr0o-ajvwIYScIFRrZV-F_lK_xem-g5C4u5rOnXB9-n5169l_4VQ/300fx300f",
+                },
+                new Product
+                {
+                    Id = 38,
+                    Name = "Sawed-Off | Wasteland Princess (Minimal Wear)",
+                    Fiyat = 19,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 101,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3cih9-8yJh4GckvP7Nb3ummJW4NE_3-qS89uki1bt-Uo5Zj3xLYSXIAQ7Ml_W_lXqwbi5hJ-0vcnAyyQyuj5iuyhoSspqEg/300fx300f",
+                },
+                new Product
+                {
+                    Id = 39,
+                    Name = "MAG-7 | Bulldozer (Field-Tested)",
+                    Fiyat = 15,
+                    Kaliteturu = EKaliteturu.field_tested,
+                    CategoryId = 101,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7uifDhz3MzRdDFO48uJmYWPnuL5feyJkG4CsMMl2bjA89T03VbjrkNoNW6nLIfBcwM2YlqD_FG_yLjq1JGi_MOee-VidpY/300fx300f",
+                },
+                new Product
+                {
+                    Id = 40,
+                    Name = "XM1014 | Seasons (Minimal Wear)",
+                    Fiyat = 13,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 101,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgporrf0e1Y07PLZTiVP09CzlYa0kfbwNoTdn2xZ_It33byS99333wXkqktsYWqmJo-cJgc3YFCDq1C7wbzrh5K0v86YyCE3pGB8sheESime/300fx300f",
+                },
+                new Product
+                {
+                    Id = 41,
+                    Name = "Sawed-Off | Devourer (Factory New)",
+                    Fiyat = 51,
+                    Kaliteturu = EKaliteturu.factory_new,
+                    CategoryId = 101,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3cih9_92hkYSEkfHLN77HmX5D7ddOhuDG_Zi7jAzn_UY5YmrwJobDcAZrM13T-AC8levuhZ_pvcuayndmvCJwtnzamQv330-LHBr0xA/300fx300f",
+                },
+                new Product
+                {
+                    Id = 42,
+                    Name = "XM1014 | Ziggy (Minimal Wear)",
+                    Fiyat = 4,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 101,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgporrf0e1Y07PLZTiVPvYznwL-RnvDzKoTQmGpD681oteXI8oThxgPk_0FqZ2uhdYOVdgVsNF6F-wLsyey7g8TutczJzHRksiQi5yuIzhSpwUYb0YoGxag/300fx300f",
+                },
+                new Product
+                {
+                    Id = 43,
+                    Name = "Sawed-Off | Limelight (Factory New)",
+                    Fiyat = 38,
+                    Kaliteturu = EKaliteturu.factory_new,
+                    CategoryId = 101,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3cih9_92hkYS0mPHyDLfYm25u5Mx2gv2Prdvzilax-kZlZDyiJILEdwdsZF6G-QO-l-m8hsDvuszMnyRlvyUhtmGdwULNRxrMww/300fx300f",
+                },
+                new Product
+                {
+                    Id = 44,
+                    Name = "Nova | Baroque Orange (Minimal Wear)",
+                    Fiyat = 133,
+                    Kaliteturu = EKaliteturu.minimal_wear,
+                    CategoryId = 101,
+                    URL = "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpouLWzKjhh3szedDNH-NPkq4yCkP_gfe6AlG1Q7JB1iLrHodXz2gy3-0tsYT_3Io-TJAA8aVqF_la2wLjr0cSi_MOeX-HnU2o/300fx300f",
                 }
-
             );
         }
     }
