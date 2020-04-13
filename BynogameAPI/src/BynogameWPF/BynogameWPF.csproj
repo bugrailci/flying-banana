@@ -8,10 +8,14 @@
 
   <ItemGroup>
     <None Remove="ByNoGame-Koyu-TR.png" />
+    <None Remove="filtrele.png" />
+    <None Remove="ilanekle.png" />
+    <None Remove="key.png" />
     <None Remove="logo_evdekal.png" />
     <None Remove="nightmode.png" />
     <None Remove="rsz_1logo_evdekal.png" />
     <None Remove="rsz_logo_evdekal.png" />
+    <None Remove="satılanlar.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,10 +24,14 @@
 
   <ItemGroup>
     <Resource Include="ByNoGame-Koyu-TR.png" />
+    <Resource Include="filtrele.png" />
+    <Resource Include="ilanekle.png" />
+    <Resource Include="key.png" />
     <Resource Include="logo_evdekal.png" />
     <Resource Include="nightmode.png" />
     <Resource Include="rsz_1logo_evdekal.png" />
     <Resource Include="rsz_logo_evdekal.png" />
+    <Resource Include="satılanlar.png" />
   </ItemGroup>
 
 </Project>

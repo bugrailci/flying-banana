@@ -5,10 +5,239 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BynogameWPF"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1820" d:DesignWidth="1080"
       Title="UrunlerSayfasi">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="Urunler" Background="#FFE5E7EA" Margin="-32,-48,-48,-85" Grid.RowSpan="2" Navigated="Urunler_Navigated" />
+        <TextBox HorizontalAlignment="Left" Margin="25,86,0,0" Text="Aranacak Kelime:" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="17" FontSize="11" FontWeight="Normal" Foreground="#FFC90F0F"/>
+        <TextBox HorizontalAlignment="Left" Margin="25,113,0,0" Text="min. TL" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Height="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="101,113,0,0" Text="max. TL" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Height="20"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="386" Margin="10,138,0,0" VerticalAlignment="Top" Width="288" Visibility="Collapsed" Grid.RowSpan="2"/>
+        <Button Content="12" HorizontalAlignment="Left" Margin="25,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" Background="White" BorderBrush="Red" Foreground="Red"/>
+        <Button Content="36" HorizontalAlignment="Left" Margin="70,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" BorderBrush="Red" Foreground="Red" Background="White"/>
+        <Button Content="72" HorizontalAlignment="Left" Margin="115,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" Background="White" Foreground="#FFF30000" BorderBrush="#FFFF0606"/>
+        <Button Content="İlanlarım" HorizontalAlignment="Left" Margin="25,253,0,0" VerticalAlignment="Top" Width="135" Background="Red" BorderBrush="White" Foreground="White"/>
+
+
+
+
+        <Label Content="Çok Satanlar" Margin="240,12,478,1780" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Content="En Düşük Fiyat" Margin="318,13,386,1780" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.49,3.519">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+
+        <Label Content="En Yüksek Fiyat" Margin="407,12,296,1781" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Content="İndirim Oranı" Margin="506,12,212,1781" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Content="Azalan Miktar" Margin="596,12,122,1780" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Content="Artan Miktar" Margin="694,12,309,1783" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Button Content="Tümü" HorizontalAlignment="Left" Margin="25,16,0,0" VerticalAlignment="Top" Height="20" Width="57" BorderBrush="Red"/>
+        <Button Content="Hızlı Teslimat" HorizontalAlignment="Left" Margin="101,16,0,0" VerticalAlignment="Top" Height="21" Width="59" Background="#FF00B653" Foreground="White" BorderBrush="Red" FontSize="9"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="180,16,0,0" VerticalAlignment="Top" Width="60" Height="24" Foreground="White" BorderBrush="#FFF5E5E5" FontSize="14">
+            <Button.Background>
+                <ImageBrush ImageSource="/filtrele.png" Opacity="1" Stretch="Fill" TileMode="None"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="784,13,0,0" VerticalAlignment="Top" Height="24" Width="72" Foreground="White" BorderBrush="#FFDEDEDE">
+            <Button.Background>
+                <ImageBrush ImageSource="/ilanekle.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="868,6,0,0" VerticalAlignment="Top" Height="34" Width="101" Foreground="#FF9C9999" BorderBrush="#FFE8E6E6">
+            <Button.Background>
+                <ImageBrush ImageSource="/satılanlar.png"/>
+            </Button.Background>
+        </Button>
+        <ComboBox HorizontalAlignment="Left" Margin="25,59,0,0" VerticalAlignment="Top" Width="135">
+            <ComboBoxItem>
+                StatTrak™
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Evet
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Hayır
+            </ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox HorizontalAlignment="Left" Margin="25,145,0,0" VerticalAlignment="Top" Width="135">
+            <ComboBoxItem>
+                Dış Görünüş
+            </ComboBoxItem>
+            <ComboBoxItem>
+                BS: Savaş Görmüş
+            </ComboBoxItem>
+            <ComboBoxItem>
+                FN: Fabrikadan Yeni Çıkmış
+            </ComboBoxItem>
+            <ComboBoxItem>
+                FT: Görevde Kullanılmış
+            </ComboBoxItem>
+            <ComboBoxItem>
+                MW: Az Aşınmış
+            </ComboBoxItem>
+            <ComboBoxItem>
+                WW: Eskimiş
+            </ComboBoxItem>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="25,172,0,0" VerticalAlignment="Top" Width="135">
+            <ComboBoxItem>
+                Silah Türü Seçiniz
+            </ComboBoxItem>
+            <ComboBoxItem>
+                AK-47
+            </ComboBoxItem>
+            <ComboBoxItem>
+                AUG
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Avci Bicagi
+            </ComboBoxItem>
+            <ComboBoxItem>
+                AWP
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Bayonet
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Bowie Bıçağı
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Desert Eagle
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Diğer
+            </ComboBoxItem>
+            <ComboBoxItem>
+                eSports Anahtarı
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Famas
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Five-SeveN
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Glock-18
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Karambit
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Kelebek Bıçak
+            </ComboBoxItem>
+            <ComboBoxItem>
+                M4A1-S
+            </ComboBoxItem>
+            <ComboBoxItem>
+                M4A4
+            </ComboBoxItem>
+            <ComboBoxItem>
+                USP-S
+            </ComboBoxItem>
+            <ComboBoxItem>
+                M9-Bayonet
+            </ComboBoxItem>
+            <ComboBoxItem>
+                MP7
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Uzman Eldivenleri
+            </ComboBoxItem>
+            <ComboBoxItem>
+                P250
+            </ComboBoxItem>
+        </ComboBox>
+        <Button Content="Knives" HorizontalAlignment="Left" Margin="332,53,0,0" VerticalAlignment="Top" Background="White" BorderBrush="{x:Null}" Height="24" Width="72" Foreground="Black"/>
+        <Button Content="Key" HorizontalAlignment="Left" Margin="248,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Gloves" HorizontalAlignment="Left" Margin="247,78,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="73"/>
+        <Button Content="Sticker" HorizontalAlignment="Left" Margin="332,78,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Machinegun" HorizontalAlignment="Left" Margin="415,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Rifles" HorizontalAlignment="Left" Margin="415,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Pistols" HorizontalAlignment="Left" Margin="497,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="MusicKit" HorizontalAlignment="Left" Margin="497,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="SMGs" HorizontalAlignment="Left" Margin="574,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Spray" HorizontalAlignment="Left" Margin="574,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Heavy" HorizontalAlignment="Left" Margin="651,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Hands" HorizontalAlignment="Left" Margin="651,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Patch" HorizontalAlignment="Left" Margin="732,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Agent" HorizontalAlignment="Left" Margin="732,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Other" HorizontalAlignment="Left" Margin="813,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <Button Content="Collectible" HorizontalAlignment="Left" Margin="890,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+
+
     </Grid>
 </Page>
