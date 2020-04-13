@@ -5,10 +5,45 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BynogameWPF"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1820" d:DesignWidth="1080"
       Title="Urundetaylisayfa">
 
     <Grid>
-        
+        <Frame x:Name="UrunlerDetay" Background="#FFE5E7EA" Margin="-32,-48,-48,-85" Grid.RowSpan="2" Navigated="Urunler_Navigated" Foreground="Black" BorderBrush="#FFFDDFDF" />
+        <Image HorizontalAlignment="Left" Height="413" Margin="494,0,0,0" VerticalAlignment="Top" Width="586" Source="/grafikana.png"/>
+        <Button Content="Factory New 1 Adet 800 TL" HorizontalAlignment="Left" Margin="58,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FF026827"/>
+        <Button Content="Minimal Wear 9 Adet 273 TL" HorizontalAlignment="Left" Margin="247,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FF13CF57"/>
+        <Button Content="Field-Tested 36 Adet 170 TL" HorizontalAlignment="Left" Margin="436,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FFF7AE64"/>
+        <Button Content="Well-Worn 2 adet 222.22 TL" HorizontalAlignment="Left" Margin="618,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FFFD4D65"/>
+        <Button Content="Battle-Scared 1 Adet  250 TL" HorizontalAlignment="Left" Margin="804,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FF801706"/>
+        <Button Content="Satıcı Durumu" HorizontalAlignment="Left" Margin="116,575,0,0" VerticalAlignment="Top" Width="111" BorderBrush="White"/>
+        <Button Content="Item Detay" HorizontalAlignment="Left" Margin="232,575,0,0" VerticalAlignment="Top" Width="111" BorderBrush="White"/>
+        <Button Content="Yorum" HorizontalAlignment="Left" Margin="348,575,0,0" VerticalAlignment="Top" Width="109" BorderBrush="White"/>
+        <Button Content="Float" HorizontalAlignment="Left" Margin="462,575,0,0" VerticalAlignment="Top" Width="103" BorderBrush="White"/>
+        <Button Content="M. İndirimi" HorizontalAlignment="Left" Margin="570,575,0,0" VerticalAlignment="Top" Width="105" BorderBrush="White"/>
+        <Button Content="Teslim Şekli" HorizontalAlignment="Left" Margin="680,575,0,0" VerticalAlignment="Top" Width="105" BorderBrush="White"/>
+        <Button Content="Fiyat" HorizontalAlignment="Left" Margin="790,575,0,0" VerticalAlignment="Top" Width="105" BorderBrush="White"/>
+        <Button Content="Toplu Al" HorizontalAlignment="Left" Margin="900,575,0,0" VerticalAlignment="Top" Width="102" BorderBrush="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="804,608,0,0" VerticalAlignment="Top" Height="23" Width="78" Foreground="#FFECDFDF" BorderBrush="#FFE6E6E6">
+            <Button.Background>
+                <ImageBrush ImageSource="/fiyatrürün.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="122,600,0,0" VerticalAlignment="Top" Height="67" Width="98" BorderBrush="#FFE6E6E6">
+            <Button.Background>
+                <ImageBrush ImageSource="/kullanıcı.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="354,608,0,0" VerticalAlignment="Top" Height="34" Width="98" BorderBrush="#FFE8E8E8">
+            <Button.Background>
+                <ImageBrush ImageSource="/yorum.png"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="42" Margin="472,600,0,0" VerticalAlignment="Top" Width="90" Source="/float.png"/>
+        <Label Content="%28" HorizontalAlignment="Left" Margin="606,607,0,0" VerticalAlignment="Top"/>
+        <Label Content="19-20" HorizontalAlignment="Left" Margin="714,607,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="945,610,0,0" VerticalAlignment="Top"/>
+        <Button Content="Sen de Sat!" HorizontalAlignment="Left" Margin="413,754,0,0" VerticalAlignment="Top" Height="24" Width="270" Background="#FFFF5454"/>
+
     </Grid>
 </Page>

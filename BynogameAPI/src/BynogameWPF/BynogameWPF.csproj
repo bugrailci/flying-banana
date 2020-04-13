@@ -9,13 +9,18 @@
   <ItemGroup>
     <None Remove="ByNoGame-Koyu-TR.png" />
     <None Remove="filtrele.png" />
+    <None Remove="fiyatrürün.png" />
+    <None Remove="float.png" />
+    <None Remove="grafikana.png" />
     <None Remove="ilanekle.png" />
     <None Remove="key.png" />
+    <None Remove="kullanıcı.png" />
     <None Remove="logo_evdekal.png" />
     <None Remove="nightmode.png" />
     <None Remove="rsz_1logo_evdekal.png" />
     <None Remove="rsz_logo_evdekal.png" />
     <None Remove="satılanlar.png" />
+    <None Remove="yorum.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,13 +30,18 @@
   <ItemGroup>
     <Resource Include="ByNoGame-Koyu-TR.png" />
     <Resource Include="filtrele.png" />
+    <Resource Include="fiyatrürün.png" />
+    <Resource Include="float.png" />
+    <Resource Include="grafikana.png" />
     <Resource Include="ilanekle.png" />
     <Resource Include="key.png" />
+    <Resource Include="kullanıcı.png" />
     <Resource Include="logo_evdekal.png" />
     <Resource Include="nightmode.png" />
     <Resource Include="rsz_1logo_evdekal.png" />
     <Resource Include="rsz_logo_evdekal.png" />
     <Resource Include="satılanlar.png" />
+    <Resource Include="yorum.png" />
   </ItemGroup>
 
 </Project>
