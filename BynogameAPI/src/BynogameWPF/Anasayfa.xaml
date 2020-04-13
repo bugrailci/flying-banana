@@ -8,7 +8,7 @@
         Title="Anasayfa" Height="800" Width="1000">
     <ScrollViewer>
         <Grid>
-            <Frame x:Name="Main" Margin="0,120,0,160" Background="#FFE9ECEF" NavigationUIVisibility="Hidden"/>
+            <Frame x:Name="Main" Margin="0,160,0,160" Background="#FFE9ECEF" NavigationUIVisibility="Hidden"/>
             <StackPanel Orientation="Horizontal" Height="61" VerticalAlignment="Top" Margin="0,25,0,0">
                 <Button Content="" Margin="50,0,0,0" Height="50" Width="156" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="BynoClick">
                     <Button.Style>
@@ -460,6 +460,133 @@
                     </Label.Style>
                 </Label>
             </StackPanel>
+
+            <Label Content="OYUNLAR" Margin="155,125,733,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+                <Label.Style>
+                    <Style TargetType="Label">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Content="KNIGHT ONLINE" Margin="296,125,555,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Content="ITEM &amp; SKIN" Margin="467,125,400,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Content="STEAM" Margin="632,125,263,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Content="PAZAR" Margin="750,125,151,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Content="DESTEKLE" Margin="857,125,10,629" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Image HorizontalAlignment="Center" Height="67" Margin="0,114,0,0" VerticalAlignment="Top" Width="983" Source="/cizgi.png"/>
+            <Label Content="Üye girişi" Margin="781,52,131,761" Height="27" Width="71" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.756,0.446">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Image HorizontalAlignment="Left" Height="22" Margin="794,45,0,0" VerticalAlignment="Top" Width="30" Source="/üye girişi.png"/>
+            <Label Content="Sepetim" Margin="853,52,59,761" Height="27" Width="71" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.756,0.446">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Image HorizontalAlignment="Left" Height="17" Margin="865,48,0,0" VerticalAlignment="Top" Width="33" Source="/sepet.png"/>
+            <Label Content="Ödeme" Margin="915,48,-3,765" Height="27" Width="71" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.756,0.446">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Image HorizontalAlignment="Left" Height="22" Margin="924,42,0,0" VerticalAlignment="Top" Width="31" Source="/ödeme.png"/>
+
+
+
+
+
         </Grid>
     </ScrollViewer>
 </Window>
