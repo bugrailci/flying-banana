@@ -35,5 +35,10 @@ namespace BynogameWPF
         {
             Main.Content = new UrunlerSayfasi();
         }
+
+        private void ItemSkinClick(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new UrunlerSayfasi();
+        }
     }
 }

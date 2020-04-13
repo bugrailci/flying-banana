@@ -227,7 +227,7 @@
                 </Label>
                 <Image Height="19" Width="43" Source="/nightmode.png" Stretch="Uniform"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="34" VerticalAlignment="Top" Margin="0,86,0,0">
+            <StackPanel Orientation="Horizontal" Height="74" VerticalAlignment="Top" Margin="0,86,0,0">
                 <Button Height="22" Width="100" Click="b1click"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Height="79" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="983" Background="#FFE2E2E2">
@@ -517,7 +517,7 @@
                 </Label>
             </StackPanel>
 
-            <Label Content="OYUNLAR" Margin="155,125,733,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+            <Label Content="OYUNLAR" Margin="137,103,750,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="29" VerticalAlignment="Top">
                 <Label.Style>
                     <Style TargetType="Label">
                         <Setter Property="Foreground" Value="#FF474748" />
@@ -529,7 +529,7 @@
                     </Style>
                 </Label.Style>
             </Label>
-            <Label Content="KNIGHT ONLINE" Margin="296,125,555,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+            <Label Content="KNIGHT ONLINE" Margin="263,103,588,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="30" VerticalAlignment="Top">
                 <Label.Style>
                     <Style TargetType="{x:Type Label}">
                         <Setter Property="Foreground" Value="#FF474748" />
@@ -541,7 +541,7 @@
                     </Style>
                 </Label.Style>
             </Label>
-            <Label Content="ITEM &amp; SKIN" Margin="467,125,400,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+            <Label Content="ITEM &amp; SKIN" Margin="443,103,424,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="29" VerticalAlignment="Top">
                 <Label.Style>
                     <Style TargetType="{x:Type Label}">
                         <Setter Property="Foreground" Value="#FF474748" />
@@ -553,7 +553,7 @@
                     </Style>
                 </Label.Style>
             </Label>
-            <Label Content="STEAM" Margin="632,125,263,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+            <Label Content="STEAM" Margin="612,103,283,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="30" VerticalAlignment="Top">
                 <Label.Style>
                     <Style TargetType="{x:Type Label}">
                         <Setter Property="Foreground" Value="#FF474748" />
@@ -565,7 +565,7 @@
                     </Style>
                 </Label.Style>
             </Label>
-            <Label Content="PAZAR" Margin="750,125,151,680" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+            <Label Content="PAZAR" Margin="723,103,178,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="29" VerticalAlignment="Top">
                 <Label.Style>
                     <Style TargetType="{x:Type Label}">
                         <Setter Property="Foreground" Value="#FF474748" />
@@ -577,7 +577,7 @@
                     </Style>
                 </Label.Style>
             </Label>
-            <Label Content="DESTEKLE" Margin="857,125,10,629" FontWeight="Normal" FontStyle="Normal" FontSize="14">
+            <Label Content="DESTEKLE" Margin="835,103,32,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="29" VerticalAlignment="Top">
                 <Label.Style>
                     <Style TargetType="{x:Type Label}">
                         <Setter Property="Foreground" Value="#FF474748" />
@@ -589,8 +589,7 @@
                     </Style>
                 </Label.Style>
             </Label>
-            <Image HorizontalAlignment="Center" Height="12" Margin="0,120,0,0" VerticalAlignment="Top" Width="983" Source="/cizgi.png" Stretch="Uniform"/>
-            <StackPanel Orientation="Horizontal" Height="34" VerticalAlignment="Top" Margin="0,125,0,0"/>
+            <Image HorizontalAlignment="Center" Height="12" Margin="0,92,0,0" VerticalAlignment="Top" Width="983" Source="/cizgi.png" Stretch="Uniform"/>
 
 
 

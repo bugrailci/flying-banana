@@ -221,22 +221,212 @@
                 P250
             </ComboBoxItem>
         </ComboBox>
-        <Button Content="Knives" HorizontalAlignment="Left" Margin="332,53,0,0" VerticalAlignment="Top" Background="White" BorderBrush="{x:Null}" Height="24" Width="72" Foreground="Black"/>
-        <Button Content="Key" HorizontalAlignment="Left" Margin="248,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Gloves" HorizontalAlignment="Left" Margin="247,78,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="73"/>
-        <Button Content="Sticker" HorizontalAlignment="Left" Margin="332,78,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Machinegun" HorizontalAlignment="Left" Margin="415,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Rifles" HorizontalAlignment="Left" Margin="415,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Pistols" HorizontalAlignment="Left" Margin="497,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="MusicKit" HorizontalAlignment="Left" Margin="497,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="SMGs" HorizontalAlignment="Left" Margin="574,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Spray" HorizontalAlignment="Left" Margin="574,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Heavy" HorizontalAlignment="Left" Margin="651,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Hands" HorizontalAlignment="Left" Margin="651,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Patch" HorizontalAlignment="Left" Margin="732,77,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Agent" HorizontalAlignment="Left" Margin="732,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Other" HorizontalAlignment="Left" Margin="813,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
-        <Button Content="Collectible" HorizontalAlignment="Left" Margin="890,53,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="White" Height="24" Width="72"/>
+        <StackPanel Margin="190,59,111,1708" Background="White">
+            <Canvas Height="51" Width="798">
+                <Label Content="Key" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="10" Width="37">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Knives" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="69" Width="52">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Rifles" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="149" Width="51">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Pistols" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="238" Width="48">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="SMGs" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="335" Width="48">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Heavy" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="425" Width="55">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Agent" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="525" Width="57">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Other" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="621" Width="49">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="MusicKit" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="232" Canvas.Top="24" Width="60">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Spray" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="335" Canvas.Top="24" Width="48">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Patch" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="525" Canvas.Top="24" Width="47">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Machinegun" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="126" Canvas.Top="24" Width="81">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Sticker" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="62" Canvas.Top="24" Width="53">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Gloves" Height="26" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.5,0.5" Canvas.Left="5" Canvas.Top="24" Width="55">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="-1.005"/>
+                            <RotateTransform Angle="0.994"/>
+                            <TranslateTransform Y="-0.316"/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Hands" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12" Canvas.Left="425" Canvas.Top="24" Width="47">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+            </Canvas>
+        </StackPanel>
+        <Label Content="Collectible" Margin="885,59,128,1734" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        
+
 
 
     </Grid>
