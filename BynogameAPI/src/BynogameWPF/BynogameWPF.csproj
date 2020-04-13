@@ -2,8 +2,28 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ByNoGame-Koyu-TR.png" />
+    <None Remove="logo_evdekal.png" />
+    <None Remove="nightmode.png" />
+    <None Remove="rsz_1logo_evdekal.png" />
+    <None Remove="rsz_logo_evdekal.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\MainMenu\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ByNoGame-Koyu-TR.png" />
+    <Resource Include="logo_evdekal.png" />
+    <Resource Include="nightmode.png" />
+    <Resource Include="rsz_1logo_evdekal.png" />
+    <Resource Include="rsz_logo_evdekal.png" />
+  </ItemGroup>
 
 </Project>
