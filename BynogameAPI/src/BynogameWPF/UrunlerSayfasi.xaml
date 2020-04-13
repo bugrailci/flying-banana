@@ -13,7 +13,7 @@
             <RowDefinition/>
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
-        <Frame x:Name="Urunler" Background="#FFE5E7EA" Margin="-32,-48,-48,-85" Grid.RowSpan="2" Navigated="Urunler_Navigated" />
+        <Frame x:Name="Urunler" Background="#FFE5E7EA" Margin="0,0,0,-85" Grid.RowSpan="2" Navigated="Urunler_Navigated" />
         <TextBox HorizontalAlignment="Left" Margin="25,86,0,0" Text="Aranacak Kelime:" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="17" FontSize="11" FontWeight="Normal" Foreground="#FFC90F0F"/>
         <TextBox HorizontalAlignment="Left" Margin="25,113,0,0" Text="min. TL" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Height="20"/>
         <TextBox HorizontalAlignment="Left" Margin="101,113,0,0" Text="max. TL" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Height="20"/>

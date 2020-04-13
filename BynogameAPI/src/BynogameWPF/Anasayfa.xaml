@@ -5,11 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BynogameWPF"
         mc:Ignorable="d"
-        Title="Anasayfa" Height="1200" Width="1000">
+        Title="Anasayfa" Height="800" Width="1000">
+    <ScrollViewer>
     <Grid>
-        <Frame x:Name="Main" Margin="0,120,0,0" Background="#FFE9ECEF" />
+        <Frame x:Name="Main" Margin="0,120,0,0" Background="#FFE9ECEF" NavigationUIVisibility="Hidden"/>
         <StackPanel Orientation="Horizontal" Height="61" VerticalAlignment="Top" Margin="0,25,0,0">
-            <Image x:Name="BynogameMainImage" Source="/rsz_1logo_evdekal.png" Height="52" Width="163" Margin="45,0,0,0" Stretch="Uniform" StretchDirection="Both" VerticalAlignment="Center"/>
+            <Button Content="" Margin="50,0,0,0" Height="50" Width="156" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="BynoClick">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="/rsz_1logo_evdekal.png"/>
+                </Button.Background>
+            </Button>
             <TextBox Height="43" Margin="50,0,0,0" Text="Size nasıl yardımcı olabilirim ?" TextWrapping="Wrap" Width="459" Foreground="#FF444445" TextAlignment="Center" FontWeight="Normal" TextDecorations="{x:Null}" FontSize="13" Background="White" SelectionBrush="#CCEE5131" VerticalAlignment="Stretch" FlowDirection="LeftToRight" VerticalContentAlignment="Center" HorizontalContentAlignment="Left">
                 <TextBox.Style>
                     <Style BasedOn="{x:Null}" TargetType="{x:Type TextBox}">
@@ -24,7 +42,7 @@
                                         <ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                                     </Border>
                                     <ControlTemplate.Triggers>
-                                        
+
                                         <Trigger Property="IsFocused" Value="True">
                                             <Setter Property="BorderBrush" TargetName="bg" Value="#FFEE5131"/>
                                             <Setter Property="BorderThickness" TargetName="bg" Value="0.75"/>
@@ -153,6 +171,9 @@
             </Label>
             <Image Height="19" Width="43" Source="/nightmode.png" Stretch="Uniform"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="34" VerticalAlignment="Top" Margin="0,86,0,0"/>
+        <StackPanel Orientation="Horizontal" Height="34" VerticalAlignment="Top" Margin="0,86,0,0">
+            <Button Height="22" Width="100" Click="b1click"/>
+        </StackPanel>
     </Grid>
+    </ScrollViewer>
 </Window>

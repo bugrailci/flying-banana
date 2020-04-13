@@ -25,5 +25,15 @@ namespace BynogameWPF
         {
             InitializeComponent();
         }
+
+        private void BynoClick(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Anasayfa2();
+        }
+
+        private void b1click(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new UrunlerSayfasi();
+        }
     }
 }
