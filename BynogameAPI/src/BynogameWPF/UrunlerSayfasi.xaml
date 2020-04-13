@@ -92,7 +92,7 @@
             </Label.Style>
         </Label>
 
-        <Label Content="Artan Miktar" Margin="694,12,309,1783" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+        <Label Content="Artan Miktar" Margin="694,12,0,1783" FontWeight="Normal" FontStyle="Normal" FontSize="12">
             <Label.Style>
                 <Style TargetType="Label">
                     <Setter Property="Foreground" Value="#FF474748" />
