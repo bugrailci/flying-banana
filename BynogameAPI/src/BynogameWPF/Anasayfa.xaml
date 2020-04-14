@@ -85,7 +85,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Image Margin="30,-10,0,0" Height="22" Width="30" Source="/üye girişi.png"/>
+                <Image Margin="30,-10,0,0" Height="22" Width="30" Source="/üye girişi.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
                 <Label Content="Üye girişi" Margin="-50,30,0,0" Height="27" Width="58" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.756,0.446">
                     <Label.Background>
                         <ImageBrush/>

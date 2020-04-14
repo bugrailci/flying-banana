@@ -50,5 +50,11 @@ namespace BynogameWPF
         {
             Main.Content = new UrunlerSayfasi();
         }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Uyepencere uye = new Uyepencere();
+            uye.Show();
+        }
     }
 }

@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="2020-04-14_22-27-42.png" />
     <None Remove="300fx300f.png" />
     <None Remove="5500tl.png" />
     <None Remove="amphibi.png" />
@@ -78,6 +79,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="2020-04-14_22-27-42.png" />
     <Resource Include="300fx300f.png" />
     <Resource Include="5500tl.png" />
     <Resource Include="amphibi.png" />
