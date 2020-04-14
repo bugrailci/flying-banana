@@ -438,7 +438,7 @@
         <Image HorizontalAlignment="Left" Height="150" Margin="553,288,0,0" VerticalAlignment="Top" Width="97" Source="/dragon.png"/>
         <Image HorizontalAlignment="Left" Height="150" Margin="674,288,0,0" VerticalAlignment="Top" Width="97" Source="/howl2.png"/>
         <Image HorizontalAlignment="Left" Height="150" Margin="798,288,0,0" VerticalAlignment="Top" Width="97" Source="/blaze.png"/>
-        <Button Content="Button" Height="150" Width="97" HorizontalAlignment="Left" Margin="674,123,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}"/>
+        <Button Content="Button" Height="150" Width="97" HorizontalAlignment="Left" Margin="674,123,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click"/>
 
 
 

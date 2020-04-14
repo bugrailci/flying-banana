@@ -230,9 +230,7 @@
                 </Label>
                 <Image Height="19" Width="43" Source="/nightmode.png" Stretch="Uniform"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="74" VerticalAlignment="Top" Margin="0,86,0,0">
-                <Button Height="22" Width="100" Click="b1click"/>
-            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="74" VerticalAlignment="Top" Margin="0,86,0,0"/>
             <StackPanel Orientation="Horizontal" Height="79" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="983" Background="#FFE2E2E2">
                 <Image Margin="300,0,0,0" Height="85" Width="391" Source="/bynovisa.png"/>
             </StackPanel>

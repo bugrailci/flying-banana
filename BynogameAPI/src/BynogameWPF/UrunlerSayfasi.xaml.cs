@@ -28,6 +28,9 @@ namespace BynogameWPF
 
         }
 
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Urundetaylisayfa urundet = new Urundetaylisayfa();
+        }
     }
 }
