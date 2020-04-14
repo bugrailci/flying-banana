@@ -9,6 +9,9 @@
     <ScrollViewer>
         <Grid>
             <Frame x:Name="Main" Margin="0,160,0,160" Background="#FFE9ECEF" NavigationUIVisibility="Hidden" Navigated="Main_Navigated"/>
+
+
+
             <StackPanel Orientation="Horizontal" Height="61" VerticalAlignment="Top" Margin="0,25,0,0">
                 <Button Content="" Margin="50,0,0,0" Height="50" Width="156" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="BynoClick">
                     <Button.Style>
@@ -541,18 +544,24 @@
                     </Style>
                 </Label.Style>
             </Label>
-            <Label Content="ITEM &amp; SKIN" Margin="443,103,424,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="29" VerticalAlignment="Top">
-                <Label.Style>
-                    <Style TargetType="{x:Type Label}">
-                        <Setter Property="Foreground" Value="#FF474748" />
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Foreground" Value="#FFEE5030" />
-                            </Trigger>
-                        </Style.Triggers>
+
+            <Button Content="ITEM &amp; SKIN" BorderBrush="{x:Null}" Foreground="Black" Click="ItemSkinClick3" Margin="414,93,413,0" Background="White" Height="49" VerticalAlignment="Top" FontSize="14">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
                     </Style>
-                </Label.Style>
-            </Label>
+                </Button.Style>
+            </Button>
+
+
             <Label Content="STEAM" Margin="612,103,283,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="30" VerticalAlignment="Top">
                 <Label.Style>
                     <Style TargetType="{x:Type Label}">
@@ -590,6 +599,10 @@
                 </Label.Style>
             </Label>
             <Image HorizontalAlignment="Center" Height="12" Margin="0,92,0,0" VerticalAlignment="Top" Width="983" Source="/cizgi.png" Stretch="Uniform"/>
+            <Image HorizontalAlignment="Center" Height="12" Margin="0,149,0,0" VerticalAlignment="Top" Width="983" Source="/cizgi.png" Stretch="Uniform"/>
+
+
+
 
 
 

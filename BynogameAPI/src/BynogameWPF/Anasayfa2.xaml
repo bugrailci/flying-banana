@@ -5,42 +5,147 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BynogameWPF"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="800"
+      d:DesignHeight="800" d:DesignWidth="1000"
       Title="Anasayfa2">
 
     <Grid>
-        <Frame x:Name="Urunler" Background="#FFE5E7EA" Margin="0,0,0,0" Navigated="Urunler_Navigated" />
-        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/sahtehesap.jpg"/>
-        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/csgo.jpg"/>
-        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/knight krem.jpg"/>
-        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/knightkoyu.jpg"/>
-        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/steamdol.jpg"/>
-        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/garanti.jpg"/>
+        <Frame x:Name="Urunler" Background="#FFE9E9E9" Margin="0,0,0,0" Navigated="Urunler_Navigated" />
+        <Image x:Name="Slider1" HorizontalAlignment="Center" Height="265" Margin="0,38,0,0" VerticalAlignment="Top" Width="904" Source="/sahtehesap.jpg"/>
+        <StackPanel Margin="0,283,0,477" Orientation="Horizontal" HorizontalAlignment="Center" Background="White" Width="904">
 
-        <Button Content="" Width="42" Margin="225,234,533,522" Height="43" Click="sahteTakasClick">
-            <Button.Background>
-                <ImageBrush ImageSource="/bynocanafa.png"/>
-            </Button.Background>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Background" Value="#FFE9ECEF" />
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="{TemplateBinding Background}" BorderBrush="#FFABADB3" BorderThickness="0.75">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="#CCEE5030" />
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
+            <Button Content="" Click="sahteTakasClick" Foreground="{x:Null}" Margin="325,0,0,0" BorderBrush="{x:Null}" Height="43" Width="42">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="/bynocanafa.png"/>
+                </Button.Background>
+
+
+            </Button>
+
+            <Button Content="" Click="csgoClick" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="43" Width="42">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="/csgosim.jpg"/>
+                </Button.Background>
+
+
+            </Button>
+            <Button Content="" Click="knight1Click" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="43" Width="42">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="/knightsim.jpg"/>
+                </Button.Background>
+
+
+            </Button>
+            <Button Content="" Click="knight2Click" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="43" Width="42">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="/knightsim.jpg"/>
+                </Button.Background>
+
+
+            </Button>
+            <Button Content="" Click="steamClick" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="43" Width="42">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="/steamsim.jpg"/>
+                </Button.Background>
+
+
+            </Button>
+            <Button Content="" Click="garantiClick" Foreground="{x:Null}" BorderBrush="{x:Null}" Height="43" Width="42">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+                <Button.Background>
+                    <ImageBrush ImageSource="/garantisim.jpg"/>
+                </Button.Background>
+
+
+            </Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="398" Margin="10,380,0,0" VerticalAlignment="Top" Width="968">
+            <Canvas Height="398" Width="968" Background="White">
+                <Image Height="341" Width="409" Canvas.Left="3" Canvas.Top="10" Source="/PUBG_Mobile_Razer_Gold.png"/>
+                <Image Height="212" Width="258" Canvas.Left="414" Canvas.Top="-49" Source="/hizli_teslimat_3.png"/>
+                <Image Height="212" Width="258" Source="/WolfTeam.png" Canvas.Left="690" Canvas.Top="-49"/>
+                <Image Height="212" Width="258" Source="/oyun_parasi_3.png" Canvas.Left="690" Canvas.Top="84"/>
+                <Image Height="212" Width="258" Source="/Zula_Altin.png" Canvas.Left="690" Canvas.Top="220"/>
+                <Image Height="212" Width="258" Source="/Rust.png" Canvas.Left="414" Canvas.Top="220"/>
+                <Image Height="212" Width="258" Source="/lol_riot_points_3.png" Canvas.Left="414" Canvas.Top="84"/>
+            </Canvas>
+        </StackPanel>
 
 
 
