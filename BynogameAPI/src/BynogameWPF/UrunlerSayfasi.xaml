@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BynogameWPF"
       mc:Ignorable="d" 
-      d:DesignHeight="1820" d:DesignWidth="1080"
+      d:DesignHeight="800" d:DesignWidth="1080"
       Title="UrunlerSayfasi">
 
     <Grid>
@@ -14,14 +14,14 @@
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
         <Frame x:Name="Urunler" Background="#FFE5E7EA" Margin="0,0,0,-85" Grid.RowSpan="2" Navigated="Urunler_Navigated" />
-        <TextBox HorizontalAlignment="Left" Margin="25,86,0,0" Text="Aranacak Kelime:" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="17" FontSize="11" FontWeight="Normal" Foreground="#FFC90F0F"/>
+        <TextBox HorizontalAlignment="Left" Margin="25,86,0,0" Text="Aranacak Kelime:" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="17" FontSize="11" FontWeight="Normal" Foreground="#FFED502F"/>
         <TextBox HorizontalAlignment="Left" Margin="25,113,0,0" Text="min. TL" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Height="20"/>
         <TextBox HorizontalAlignment="Left" Margin="101,113,0,0" Text="max. TL" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Height="20"/>
         <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="386" Margin="10,138,0,0" VerticalAlignment="Top" Width="288" Visibility="Collapsed" Grid.RowSpan="2"/>
-        <Button Content="12" HorizontalAlignment="Left" Margin="25,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" Background="White" BorderBrush="Red" Foreground="Red"/>
-        <Button Content="36" HorizontalAlignment="Left" Margin="70,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" BorderBrush="Red" Foreground="Red" Background="White"/>
-        <Button Content="72" HorizontalAlignment="Left" Margin="115,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" Background="White" Foreground="#FFF30000" BorderBrush="#FFFF0606"/>
-        <Button Content="İlanlarım" HorizontalAlignment="Left" Margin="25,253,0,0" VerticalAlignment="Top" Width="135" Background="Red" BorderBrush="White" Foreground="White"/>
+        <Button Content="12" HorizontalAlignment="Left" Margin="25,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" Background="White" BorderBrush="#FFED502F" Foreground="#FFED502F"/>
+        <Button Content="36" HorizontalAlignment="Left" Margin="70,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" BorderBrush="#FFED502F" Foreground="#FFED502F" Background="White"/>
+        <Button Content="72" HorizontalAlignment="Left" Margin="115,206,0,0" VerticalAlignment="Top" Height="29" Width="45" FontWeight="Bold" Background="White" Foreground="#FFED502F" BorderBrush="#FFED502F"/>
+        <Button Content="İlanlarım" HorizontalAlignment="Left" Margin="25,253,0,0" VerticalAlignment="Top" Width="135" Background="#FFED502F" BorderBrush="White" Foreground="White"/>
 
 
 
@@ -104,8 +104,8 @@
                 </Style>
             </Label.Style>
         </Label>
-        <Button Content="Tümü" HorizontalAlignment="Left" Margin="25,16,0,0" VerticalAlignment="Top" Height="20" Width="57" BorderBrush="Red"/>
-        <Button Content="Hızlı Teslimat" HorizontalAlignment="Left" Margin="101,16,0,0" VerticalAlignment="Top" Height="21" Width="59" Background="#FF00B653" Foreground="White" BorderBrush="Red" FontSize="9"/>
+        <Button Content="Tümü" HorizontalAlignment="Left" Margin="25,16,0,0" VerticalAlignment="Top" Height="20" Width="57" BorderBrush="#FFED502F" Background="#FFE9E9E9"/>
+        <Button Content="Hızlı Teslimat" HorizontalAlignment="Left" Margin="101,16,0,0" VerticalAlignment="Top" Height="21" Width="59" Background="#FF33B339" Foreground="White" BorderBrush="#FFED502F" FontSize="9"/>
         <Button Content="" HorizontalAlignment="Left" Margin="180,16,0,0" VerticalAlignment="Top" Width="60" Height="24" Foreground="White" BorderBrush="#FFF5E5E5" FontSize="14">
             <Button.Background>
                 <ImageBrush ImageSource="/filtrele.png" Opacity="1" Stretch="Fill" TileMode="None"/>
@@ -425,7 +425,21 @@
                 </Style>
             </Label.Style>
         </Label>
-        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="318,294,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="190,123,0,0" VerticalAlignment="Top" Width="97" Source="/karambit.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="311,123,0,0" VerticalAlignment="Top" Width="97" Source="/tiger4.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="433,123,0,0" VerticalAlignment="Top" Width="97" Source="/butterfly.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="553,123,0,0" VerticalAlignment="Top" Width="97" Source="/bayonet.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="674,123,0,0" VerticalAlignment="Top" Width="97" Source="/fade.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="799,123,0,0" VerticalAlignment="Top" Width="97" Source="/doppler.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="190,288,0,0" VerticalAlignment="Top" Width="97" Source="/sportg.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="311,288,0,0" VerticalAlignment="Top" Width="97" Source="/amphibi.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="433,288,0,0" VerticalAlignment="Top" Width="97" Source="/fadeg.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="553,288,0,0" VerticalAlignment="Top" Width="97" Source="/dragon.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="674,288,0,0" VerticalAlignment="Top" Width="97" Source="/howl2.png"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="798,288,0,0" VerticalAlignment="Top" Width="97" Source="/blaze.png"/>
+        <Button Content="Button" Height="150" Width="97" HorizontalAlignment="Left" Margin="674,123,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}"/>
+
 
 
 
