@@ -17,7 +17,7 @@ namespace BYNOGAME.API.Domain.Models.Queries
 
             if (ItemsPerPage <= 0)
             {
-                ItemsPerPage = 10;
+                ItemsPerPage = 12;
             }
         }
     }

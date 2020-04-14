@@ -1,0 +1,613 @@
+﻿<Window x:Class="BynogameWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BynogameWPF"
+        mc:Ignorable="d"
+        Title="Anasayfa" Height="800" Width="1000">
+    <ScrollViewer>
+        <Grid>
+            <Frame x:Name="Main" Margin="0,160,0,160" Background="#FFE9ECEF" NavigationUIVisibility="Hidden" Navigated="Main_Navigated"/>
+
+
+
+            <StackPanel Orientation="Horizontal" Height="61" VerticalAlignment="Top" Margin="0,25,0,0">
+                <Button Content="" Margin="50,0,0,0" Height="50" Width="156" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="BynoClick">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/rsz_1logo_evdekal.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Height="43" Margin="50,0,0,0" Text="Size nasıl yardımcı olabilirim ?" TextWrapping="Wrap" Width="459" Foreground="#FF444445" TextAlignment="Center" FontWeight="Normal" TextDecorations="{x:Null}" FontSize="13" Background="White" SelectionBrush="#CCEE5131" VerticalAlignment="Stretch" FlowDirection="LeftToRight" VerticalContentAlignment="Center" HorizontalContentAlignment="Left">
+                    <TextBox.Style>
+                        <Style BasedOn="{x:Null}" TargetType="{x:Type TextBox}">
+                            <Setter Property="BorderThickness" Value="0.75"/>
+                            <Setter Property="Padding" Value="1"/>
+                            <Setter Property="AllowDrop" Value="true"/>
+                            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type TextBox}">
+                                        <Border x:Name="bg" BorderBrush="#FF825E5E">
+                                            <ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+
+                                            <Trigger Property="IsFocused" Value="True">
+                                                <Setter Property="BorderBrush" TargetName="bg" Value="#FFEE5131"/>
+                                                <Setter Property="BorderThickness" TargetName="bg" Value="0.75"/>
+                                            </Trigger>
+
+
+                                            <Trigger Property="IsFocused" Value="False">
+                                                <Setter Property="BorderBrush" TargetName="bg" Value="#858585"/>
+                                                <Setter Property="BorderThickness" TargetName="bg" Value="0.75"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+
+                    </TextBox.Style>
+                </TextBox>
+                <Button Content="ARA" Width="42" Margin="0,0,0,0" Height="43">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#FFE9ECEF" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="#FFABADB3" BorderThickness="0.75">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#CCEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Image Margin="30,-10,0,0" Height="22" Width="30" Source="/üye girişi.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+                <Label Content="Üye girişi" Margin="-50,30,0,0" Height="27" Width="58" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.756,0.446">
+                    <Label.Background>
+                        <ImageBrush/>
+                    </Label.Background>
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Sepetim" Margin="10,34,0,0" Height="27" Width="60" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.492,0.584">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.029"/>
+                            <TranslateTransform X="0.068" Y="0.276"/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                    <Label.Background>
+                        <ImageBrush/>
+                    </Label.Background>
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Image Margin="-70,0,0,0" Height="17" Width="27" Source="/sepet.png"/>
+                <Label Content="Ödeme" Margin="2,35,0,0" Height="27" Width="71" FontWeight="Normal" FontStyle="Normal" FontSize="12" RenderTransformOrigin="0.756,0.446">
+                    <Label.Background>
+                        <ImageBrush/>
+                    </Label.Background>
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Image Margin="-91,-5,0,0" Height="22" Width="31" Source="/ödeme.png"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="25" VerticalAlignment="Top">
+                <Label Content="TR" Margin="250,0,0,0" Height="27" Width="24" FontWeight="Normal" FontStyle="Normal" FontSize="12" VerticalAlignment="Stretch">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="|" Foreground="#FF474748" Width="12"/>
+                <Label Content="EN" Height="27" Width="42" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Hollywood" Margin="80,0,0,0" Height="27" Width="71" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Param Kart" Margin="10,0,0,0" Height="27" Width="71" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Yorumlar" Margin="10,0,0,0" Height="27" Width="63" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Kurumsal" Margin="0,0,0,0" Height="27" Width="63" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="İK" Height="27" Width="28" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Image Height="19" Width="43" Source="/nightmode.png" Stretch="Uniform"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="74" VerticalAlignment="Top" Margin="0,86,0,0">
+                <Button Height="22" Width="100" Click="b1click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="79" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="983" Background="#FFE2E2E2">
+                <Image Margin="300,0,0,0" Height="85" Width="391" Source="/bynovisa.png"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Height="82" Margin="0,0,0,78" VerticalAlignment="Bottom" Width="1050" Background="#FFE2E2E2">
+                <Label Content="ByNoGame" Margin="-635,-3,0,0" Width="72" FontSize="11"/>
+
+                <Label Content="Hakkımızda" Margin="-650,-8,0,0" Height="20" Width="56" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Yorumlar" Margin="-650,-10,0,0" Height="20" Width="56" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Etkinlikler" Margin="-650,-10,0,0" Height="20" Width="56" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Kariyer" Margin="-650,-11,0,0" Height="21" Width="56" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Sponsorluk Desteklerimiz" Margin="-555,-11,0,0" Height="21" Width="150" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Bir Fikrim Var!" Margin="-635,-10,0,0" Height="20" Width="70" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Alışveriş" Margin="-320,-150,0,0" Width="53" FontSize="11" Height="23"/>
+                <Label Content="Ödeme Seçenekleri" Margin="-280,-120,0,0" Height="20" Width="94" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Banka Hesap Numaralarımız" Margin="-252,-100,0,0" Height="20" Width="121" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Ödeme Yap(tım)" Margin="-252,-80,0,0" Height="20" Width="121" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Takas" Margin="-252,-60,0,0" Height="20" Width="121" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Bayiniz Olmak İstiyorum" Margin="-250,-40,0,0" Height="23" Width="122" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="BNGPay Destekle" Margin="-250,-20,0,0" Height="20" Width="121" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Üyelik" Margin="28,-150,0,0" Width="53" FontSize="11" Height="25"/>
+                <Label Content="Üye Adı/Şifre Unuttum" Margin="75,-120,0,0" Height="20" Width="100" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Bilgilerim" Margin="70,-98,0,0" Height="22" Width="94" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Destek Taleplerim" Margin="70,-78,0,0" Height="22" Width="94" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Siparişlerim" Margin="70,-58,0,0" Height="22" Width="94" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Güvenlik" Margin="70,-38,0,0" Height="22" Width="94" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Hesap Silme" Margin="70,-20,0,0" Height="22" Width="94" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Yardım" Margin="350,-150,0,0" Width="53" FontSize="11" Height="23"/>
+                <Label Content="S.S.S" Margin="400,-120,0,0" Height="20" Width="100" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Canlı Destek" Margin="400,-100,0,0" Height="20" Width="100" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Gizlilik Politikası" Margin="400,-80,0,0" Height="20" Width="100" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Üyelik ve Hizmet Sözleşmesi" Margin="430,-60,0,0" Height="20" Width="130" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Label Content="Hizmet Alım Satım Sözleşmesi" Margin="430,-40,0,0" Height="20" Width="130" FontWeight="Normal" FontStyle="Normal" FontSize="9">
+                    <Label.Style>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FF474748" />
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="#FFEE5030" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+            </StackPanel>
+
+            <Label Content="OYUNLAR" Margin="137,103,750,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="29" VerticalAlignment="Top">
+                <Label.Style>
+                    <Style TargetType="Label">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Content="KNIGHT ONLINE" Margin="263,103,588,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="30" VerticalAlignment="Top">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+
+            <Button Content="ITEM &amp; SKIN" BorderBrush="{x:Null}" Foreground="Black" Click="ItemSkinClick3" Margin="414,93,413,0" Background="White" Height="49" VerticalAlignment="Top" FontSize="14">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderThickness="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+
+            <Label Content="STEAM" Margin="612,103,283,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="30" VerticalAlignment="Top">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Content="PAZAR" Margin="723,103,178,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="29" VerticalAlignment="Top">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label Content="DESTEKLE" Margin="835,103,32,0" FontWeight="Normal" FontStyle="Normal" FontSize="14" Height="29" VerticalAlignment="Top">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Foreground" Value="#FF474748" />
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="#FFEE5030" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Image HorizontalAlignment="Center" Height="12" Margin="0,92,0,0" VerticalAlignment="Top" Width="983" Source="/cizgi.png" Stretch="Uniform"/>
+            <Image HorizontalAlignment="Center" Height="12" Margin="0,149,0,0" VerticalAlignment="Top" Width="983" Source="/cizgi.png" Stretch="Uniform"/>
+
+
+
+
+
+
+
+
+        </Grid>
+    </ScrollViewer>
+</Window>

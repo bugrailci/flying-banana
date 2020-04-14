@@ -12,6 +12,14 @@ using BYNOGAME.API.Extensions;
 using BYNOGAME.API.Persistence.Contexts;
 using BYNOGAME.API.Persistence.Repositories;
 using BYNOGAME.API.Services;
+using Microsoft.AspNetCore.Http;
+using BYNOGAME.API.Helpers;
+using Microsoft.AspNetCore.Mvc;
+using System.Text;
+using System.Net;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Diagnostics;
 
 namespace BYNOGAME.API
 {
@@ -23,9 +31,39 @@ namespace BYNOGAME.API
         {
             Configuration = configuration;
         }
-
+        
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appSettingsSection);
+
+            // JWT authentication Aayarlaması
+            var appSettings = appSettingsSection.Get<AppSettings>();
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
+            services.AddScoped<IUserService, UserService>();
+
             services.AddMemoryCache();
 
             services.AddCustomSwagger();
@@ -57,6 +95,24 @@ namespace BYNOGAME.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+
+                app.UseExceptionHandler(builder => {
+                    builder.Run(async context => {
+                        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
+                        var error = context.Features.Get<IExceptionHandlerFeature>();
+                        if (error != null)
+                        {
+                            context.Response.AddApplicationError(error.Error.Message);
+                            await context.Response.WriteAsync(error.Error.Message);
+                        }
+                    });
+                });
+
+            }
 
             app.UseCustomSwagger();
 
@@ -64,9 +120,18 @@ namespace BYNOGAME.API
 
             app.UseAuthorization();
 
+            app.UseAuthentication();
+
+            app.UseStaticFiles();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Could Not Find Anything");
             });
         }
     }

@@ -1,0 +1,82 @@
+﻿<Page x:Class="BynogameWPF.Urundetaylisayfa"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BynogameWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="1820" d:DesignWidth="1080"
+      Title="Urundetaylisayfa">
+
+    <Grid>
+        <Frame x:Name="UrunlerDetay" Background="#FFE5E7EA" Margin="-32,-48,-48,-85" Grid.RowSpan="2" Navigated="Urunler_Navigated" Foreground="Black" />
+        <Image HorizontalAlignment="Left" Height="413" Margin="494,0,0,0" VerticalAlignment="Top" Width="586" Source="/grafiknew.png"/>
+        <Button Content="Factory New 1 Adet 5500 TL" HorizontalAlignment="Left" Margin="58,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="Green" BorderBrush="{x:Null}"/>
+        <Button Content="Minimal Wear 0 Adet 0 TL" HorizontalAlignment="Left" Margin="247,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FF5CB85C" BorderBrush="{x:Null}"/>
+        <Button Content="Field-Tested 0 Adet 0 TL" HorizontalAlignment="Left" Margin="436,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FFF0AD4E" BorderBrush="{x:Null}"/>
+        <Button Content="Well-Worn 0 adet 0 TL" HorizontalAlignment="Left" Margin="618,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FFD9534F" BorderBrush="{x:Null}"/>
+        <Button Content="Battle-Scared 0 Adet  0 TL" HorizontalAlignment="Left" Margin="804,491,0,0" VerticalAlignment="Top" Height="30" Width="169" Background="#FF993A38" BorderBrush="{x:Null}"/>
+        <Button Content="Satıcı Durumu" HorizontalAlignment="Left" Margin="116,575,0,0" VerticalAlignment="Top" Width="111" BorderBrush="#FFDEE2E6"/>
+        <Button Content="Item Detay" HorizontalAlignment="Left" Margin="232,575,0,0" VerticalAlignment="Top" Width="111" BorderBrush="#FFE9E9E9"/>
+        <Button Content="Yorum" HorizontalAlignment="Left" Margin="348,575,0,0" VerticalAlignment="Top" Width="109" BorderBrush="#FFDEE2E6"/>
+        <Button Content="Float" HorizontalAlignment="Left" Margin="462,575,0,0" VerticalAlignment="Top" Width="103" BorderBrush="#FFE9E9E9"/>
+        <Button Content="M. İndirimi" HorizontalAlignment="Left" Margin="570,575,0,0" VerticalAlignment="Top" Width="105" BorderBrush="#FFE9E9E9"/>
+        <Button Content="Teslim Şekli" HorizontalAlignment="Left" Margin="680,575,0,0" VerticalAlignment="Top" Width="105" BorderBrush="#FFDEE2E6"/>
+        <Button Content="Fiyat" HorizontalAlignment="Left" Margin="790,575,0,0" VerticalAlignment="Top" Width="105" BorderBrush="#FFDEE2E6"/>
+        <Button Content="Toplu Al" HorizontalAlignment="Left" Margin="900,575,0,0" VerticalAlignment="Top" Width="102" BorderBrush="#FFDEE2E6"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="804,608,0,0" VerticalAlignment="Top" Height="23" Width="78" Foreground="#FFECDFDF" BorderBrush="#FFE6E6E6">
+            <Button.Background>
+                <ImageBrush ImageSource="/5500tl.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="122,600,0,0" VerticalAlignment="Top" Height="67" Width="98" BorderBrush="#FFE6E6E6">
+            <Button.Background>
+                <ImageBrush ImageSource="/kullanıcı.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="354,608,0,0" VerticalAlignment="Top" Height="34" Width="98" BorderBrush="#FFE8E8E8">
+            <Button.Background>
+                <ImageBrush ImageSource="/yorum.png"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="42" Margin="472,600,0,0" VerticalAlignment="Top" Width="90" Source="/floatttt.png"/>
+        <Label Content="%2" HorizontalAlignment="Left" Margin="606,607,0,0" VerticalAlignment="Top"/>
+        <Label Content="12-2312-23" HorizontalAlignment="Left" Margin="702,607,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="945,610,0,0" VerticalAlignment="Top"/>
+        <Button Content="Sen de Sat!" HorizontalAlignment="Left" Margin="413,754,0,0" VerticalAlignment="Top" Height="24" Width="270" Background="#FFED502F" BorderBrush="#FFED502F"/>
+        <Image HorizontalAlignment="Left" Height="379" Margin="91,40,0,0" VerticalAlignment="Top" Width="366" Source="/300fx300f.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="72,21,0,0" Text="★ Karambit | Fade (Factory New)" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="212,54,0,0" Text="#Knives" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF33AFF6"/>
+        <TextBlock HorizontalAlignment="Left" Margin="212,75,0,0" Text="#Factory New / Fabrikadan Yeni Çıkmış" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF33B388"/>
+        <TextBlock HorizontalAlignment="Left" Margin="212,96,0,0" Text="#Karambit" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFA2A2A9"/>
+
+
+        <Label Content="Steamanalyst Referans Fiyatı : 5598 TL" Margin="65,344,785,1449" Height="27" FontWeight="Normal" FontStyle="Normal" FontSize="12">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Content="♡ " Margin="381,5,664,1764" FontWeight="Normal" FontStyle="Normal" FontSize="30">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FF474748" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FFEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+
+    </Grid>
+</Page>
