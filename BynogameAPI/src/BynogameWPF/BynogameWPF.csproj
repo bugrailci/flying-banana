@@ -7,22 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="bynocanafa.png" />
     <None Remove="ByNoGame-Koyu-TR.png" />
     <None Remove="bynovisa.png" />
     <None Remove="cizgi.png" />
+    <None Remove="csgo.jpg" />
     <None Remove="filtrele.png" />
     <None Remove="fiyatrürün.png" />
     <None Remove="float.png" />
+    <None Remove="garanti.jpg" />
     <None Remove="grafikana.png" />
     <None Remove="ilanekle.png" />
     <None Remove="key.png" />
+    <None Remove="knight krem.jpg" />
+    <None Remove="knightkoyu.jpg" />
     <None Remove="kullanıcı.png" />
     <None Remove="logo_evdekal.png" />
     <None Remove="nightmode.png" />
     <None Remove="rsz_1logo_evdekal.png" />
     <None Remove="rsz_logo_evdekal.png" />
+    <None Remove="sahtehesap.jpg" />
     <None Remove="satılanlar.png" />
     <None Remove="sepet.png" />
+    <None Remove="steamdol.jpg" />
     <None Remove="yorum.png" />
     <None Remove="ödeme.png" />
     <None Remove="üye girişi.png" />
@@ -33,22 +40,29 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="bynocanafa.png" />
     <Resource Include="ByNoGame-Koyu-TR.png" />
     <Resource Include="bynovisa.png" />
     <Resource Include="cizgi.png" />
+    <Resource Include="csgo.jpg" />
     <Resource Include="filtrele.png" />
     <Resource Include="fiyatrürün.png" />
     <Resource Include="float.png" />
+    <Resource Include="garanti.jpg" />
     <Resource Include="grafikana.png" />
     <Resource Include="ilanekle.png" />
     <Resource Include="key.png" />
+    <Resource Include="knight krem.jpg" />
+    <Resource Include="knightkoyu.jpg" />
     <Resource Include="kullanıcı.png" />
     <Resource Include="logo_evdekal.png" />
     <Resource Include="nightmode.png" />
     <Resource Include="rsz_1logo_evdekal.png" />
     <Resource Include="rsz_logo_evdekal.png" />
+    <Resource Include="sahtehesap.jpg" />
     <Resource Include="satılanlar.png" />
     <Resource Include="sepet.png" />
+    <Resource Include="steamdol.jpg" />
     <Resource Include="yorum.png" />
     <Resource Include="ödeme.png" />
     <Resource Include="üye girişi.png" />

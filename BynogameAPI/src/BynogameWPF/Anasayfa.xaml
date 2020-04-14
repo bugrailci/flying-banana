@@ -8,7 +8,7 @@
         Title="Anasayfa" Height="800" Width="1000">
     <ScrollViewer>
         <Grid>
-            <Frame x:Name="Main" Margin="0,160,0,160" Background="#FFE9ECEF" NavigationUIVisibility="Hidden"/>
+            <Frame x:Name="Main" Margin="0,160,0,160" Background="#FFE9ECEF" NavigationUIVisibility="Hidden" Navigated="Main_Navigated"/>
             <StackPanel Orientation="Horizontal" Height="61" VerticalAlignment="Top" Margin="0,25,0,0">
                 <Button Content="" Margin="50,0,0,0" Height="50" Width="156" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="BynoClick">
                     <Button.Style>

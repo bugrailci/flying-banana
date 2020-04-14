@@ -9,7 +9,41 @@
       Title="Anasayfa2">
 
     <Grid>
-        <Frame x:Name="Urunler" Background="#FFE5E7EA" Margin="0,0,0,0" />
-        
+        <Frame x:Name="Urunler" Background="#FFE5E7EA" Margin="0,0,0,0" Navigated="Urunler_Navigated" />
+        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/sahtehesap.jpg"/>
+        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/csgo.jpg"/>
+        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/knight krem.jpg"/>
+        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/knightkoyu.jpg"/>
+        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/steamdol.jpg"/>
+        <Image HorizontalAlignment="Left" Height="206" Margin="43,23,0,0" VerticalAlignment="Top" Width="727" Source="/garanti.jpg"/>
+
+        <Button Content="" Width="42" Margin="225,234,533,522" Height="43" Click="sahteTakasClick">
+            <Button.Background>
+                <ImageBrush ImageSource="/bynocanafa.png"/>
+            </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FFE9ECEF" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="#FFABADB3" BorderThickness="0.75">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#CCEE5030" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+
+
+
     </Grid>
 </Page>

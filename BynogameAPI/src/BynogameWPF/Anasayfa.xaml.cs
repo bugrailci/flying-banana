@@ -24,6 +24,7 @@ namespace BynogameWPF
         public MainWindow()
         {
             InitializeComponent();
+            Main.Content = new Anasayfa2();
         }
 
         private void BynoClick(object sender, RoutedEventArgs e)
@@ -36,9 +37,11 @@ namespace BynogameWPF
             Main.Content = new UrunlerSayfasi();
         }
 
-        private void ItemSkinClick(object sender, RoutedEventArgs e)
+        
+
+        private void Main_Navigated(object sender, NavigationEventArgs e)
         {
-            Main.Content = new UrunlerSayfasi();
+
         }
     }
 }

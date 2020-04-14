@@ -22,5 +22,15 @@ namespace BynogameWPF
         {
             InitializeComponent();
         }
+
+        private void Urunler_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void sahteTakasClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
